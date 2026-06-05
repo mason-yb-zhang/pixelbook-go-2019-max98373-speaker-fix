@@ -1,0 +1,2924 @@
+state.MAX98373 {
+	control.1 {
+		iface MIXER
+		name 'Right Digital Vol Sel Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.2 {
+		iface MIXER
+		name 'Right Volume Location Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.3 {
+		iface MIXER
+		name 'Right Ramp Up Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.4 {
+		iface MIXER
+		name 'Right Ramp Down Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.5 {
+		iface MIXER
+		name 'Right OVC Autorestart Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.6 {
+		iface MIXER
+		name 'Right THERM Autorestart Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.7 {
+		iface MIXER
+		name 'Right CMON Autorestart Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.8 {
+		iface MIXER
+		name 'Right CLK Monitor Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.9 {
+		iface MIXER
+		name 'Right Dither Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.10 {
+		iface MIXER
+		name 'Right DC Blocker Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.11 {
+		iface MIXER
+		name 'Right Digital Volume'
+		value 127
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 127'
+			dbmin -9999999
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.12 {
+		iface MIXER
+		name 'Right Speaker Volume'
+		value 10
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 10'
+			dbmin 0
+			dbmax 600
+			dbvalue.0 600
+		}
+	}
+	control.13 {
+		iface MIXER
+		name 'Right FS Max Volume'
+		value 8
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 9'
+			dbmin 800
+			dbmax 1700
+			dbvalue.0 1600
+		}
+	}
+	control.14 {
+		iface MIXER
+		name 'Right Output Voltage'
+		value '13.63V'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '5.43V'
+			item.1 '6.09V'
+			item.2 '6.83V'
+			item.3 '7.67V'
+			item.4 '8.60V'
+			item.5 '9.65V'
+			item.6 '10.83V'
+			item.7 '12.15V'
+			item.8 '13.63V'
+			item.9 '15.29V'
+		}
+	}
+	control.15 {
+		iface MIXER
+		name 'Right DHT Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.16 {
+		iface MIXER
+		name 'Right DHT Min Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 9'
+			dbmin 800
+			dbmax 1700
+			dbvalue.0 800
+		}
+	}
+	control.17 {
+		iface MIXER
+		name 'Right DHT Rot Pnt Volume'
+		value 14
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -3000
+			dbmax -50
+			dbvalue.0 -100
+		}
+	}
+	control.18 {
+		iface MIXER
+		name 'Right DHT Attack Step Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 4'
+			dbmin 25
+			dbmax 300
+			dbvalue.0 25
+		}
+	}
+	control.19 {
+		iface MIXER
+		name 'Right DHT Release Step Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 4'
+			dbmin 25
+			dbmax 300
+			dbvalue.0 25
+		}
+	}
+	control.20 {
+		iface MIXER
+		name 'Right DHT Attack Rate'
+		value '70us'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '17.5us'
+			item.1 '35us'
+			item.2 '70us'
+			item.3 '140us'
+			item.4 '280us'
+			item.5 '560us'
+			item.6 '1120us'
+			item.7 '2240us'
+		}
+	}
+	control.21 {
+		iface MIXER
+		name 'Right DHT Release Rate'
+		value '1150ms'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '45ms'
+			item.1 '225ms'
+			item.2 '450ms'
+			item.3 '1150ms'
+			item.4 '2250ms'
+			item.5 '3100ms'
+			item.6 '4500ms'
+			item.7 '6750ms'
+		}
+	}
+	control.22 {
+		iface MIXER
+		name 'Right ADC PVDD CH Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.23 {
+		iface MIXER
+		name 'Right ADC PVDD FLT Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.24 {
+		iface MIXER
+		name 'Right ADC TEMP FLT Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.25 {
+		iface MIXER
+		name 'Right ADC PVDD'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.26 {
+		iface MIXER
+		name 'Right ADC TEMP'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.27 {
+		iface MIXER
+		name 'Right ADC PVDD FLT Coeff'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 3'
+		}
+	}
+	control.28 {
+		iface MIXER
+		name 'Right ADC TEMP FLT Coeff'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 3'
+		}
+	}
+	control.29 {
+		iface MIXER
+		name 'Right ADC SampleRate'
+		value '333kHz'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '333kHz'
+			item.1 '192kHz'
+			item.2 '64kHz'
+			item.3 '48kHz'
+		}
+	}
+	control.30 {
+		iface MIXER
+		name 'Right BDE Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.31 {
+		iface MIXER
+		name 'Right BDE LVL4 Mute Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.32 {
+		iface MIXER
+		name 'Right BDE LVL4 Hold Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.33 {
+		iface MIXER
+		name 'Right BDE LVL1 Thresh'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.34 {
+		iface MIXER
+		name 'Right BDE LVL2 Thresh'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.35 {
+		iface MIXER
+		name 'Right BDE LVL3 Thresh'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.36 {
+		iface MIXER
+		name 'Right BDE LVL4 Thresh'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.37 {
+		iface MIXER
+		name 'Right BDE Active Level'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 8'
+		}
+	}
+	control.38 {
+		iface MIXER
+		name 'Right BDE Clip Mode Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.39 {
+		iface MIXER
+		name 'Right BDE Thresh Hysteresis'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.40 {
+		iface MIXER
+		name 'Right BDE Hold Time'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.41 {
+		iface MIXER
+		name 'Right BDE Attack Rate'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+		}
+	}
+	control.42 {
+		iface MIXER
+		name 'Right BDE Release Rate'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+		}
+	}
+	control.43 {
+		iface MIXER
+		name 'Right BDE LVL1 Clip Thresh Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.44 {
+		iface MIXER
+		name 'Right BDE LVL2 Clip Thresh Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.45 {
+		iface MIXER
+		name 'Right BDE LVL3 Clip Thresh Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.46 {
+		iface MIXER
+		name 'Right BDE LVL4 Clip Thresh Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.47 {
+		iface MIXER
+		name 'Right BDE LVL1 Clip Reduction Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.48 {
+		iface MIXER
+		name 'Right BDE LVL2 Clip Reduction Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.49 {
+		iface MIXER
+		name 'Right BDE LVL3 Clip Reduction Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.50 {
+		iface MIXER
+		name 'Right BDE LVL4 Clip Reduction Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.51 {
+		iface MIXER
+		name 'Right BDE LVL1 Limiter Thresh Volume'
+		value 15
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.52 {
+		iface MIXER
+		name 'Right BDE LVL2 Limiter Thresh Volume'
+		value 15
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.53 {
+		iface MIXER
+		name 'Right BDE LVL3 Limiter Thresh Volume'
+		value 15
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.54 {
+		iface MIXER
+		name 'Right BDE LVL4 Limiter Thresh Volume'
+		value 15
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.55 {
+		iface MIXER
+		name 'Right Limiter Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.56 {
+		iface MIXER
+		name 'Right Limiter Src Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.57 {
+		iface MIXER
+		name 'Right Limiter Thresh Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 -1500
+		}
+	}
+	control.58 {
+		iface MIXER
+		name 'Right Limiter Attack Rate'
+		value '10us'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '10us'
+			item.1 '20us'
+			item.2 '40us'
+			item.3 '80us'
+			item.4 '160us'
+			item.5 '320us'
+			item.6 '640us'
+			item.7 '1.28ms'
+			item.8 '2.56ms'
+			item.9 '5.12ms'
+			item.10 '10.24ms'
+			item.11 '20.48ms'
+			item.12 '40.96ms'
+			item.13 '81.92ms'
+			item.14 '16.384ms'
+			item.15 '32.768ms'
+		}
+	}
+	control.59 {
+		iface MIXER
+		name 'Right Limiter Release Rate'
+		value '40us'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '40us'
+			item.1 '80us'
+			item.2 '160us'
+			item.3 '320us'
+			item.4 '640us'
+			item.5 '1.28ms'
+			item.6 '2.56ms'
+			item.7 '5.120ms'
+			item.8 '10.24ms'
+			item.9 '20.48ms'
+			item.10 '40.96ms'
+			item.11 '81.92ms'
+			item.12 '163.84ms'
+			item.13 '327.68ms'
+			item.14 '655.36ms'
+			item.15 '1310.72ms'
+		}
+	}
+	control.60 {
+		iface MIXER
+		name 'Left Digital Vol Sel Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.61 {
+		iface MIXER
+		name 'Left Volume Location Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.62 {
+		iface MIXER
+		name 'Left Ramp Up Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.63 {
+		iface MIXER
+		name 'Left Ramp Down Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.64 {
+		iface MIXER
+		name 'Left OVC Autorestart Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.65 {
+		iface MIXER
+		name 'Left THERM Autorestart Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.66 {
+		iface MIXER
+		name 'Left CMON Autorestart Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.67 {
+		iface MIXER
+		name 'Left CLK Monitor Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.68 {
+		iface MIXER
+		name 'Left Dither Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.69 {
+		iface MIXER
+		name 'Left DC Blocker Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.70 {
+		iface MIXER
+		name 'Left Digital Volume'
+		value 127
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 127'
+			dbmin -9999999
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.71 {
+		iface MIXER
+		name 'Left Speaker Volume'
+		value 10
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 10'
+			dbmin 0
+			dbmax 600
+			dbvalue.0 600
+		}
+	}
+	control.72 {
+		iface MIXER
+		name 'Left FS Max Volume'
+		value 8
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 9'
+			dbmin 800
+			dbmax 1700
+			dbvalue.0 1600
+		}
+	}
+	control.73 {
+		iface MIXER
+		name 'Left Output Voltage'
+		value '13.63V'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '5.43V'
+			item.1 '6.09V'
+			item.2 '6.83V'
+			item.3 '7.67V'
+			item.4 '8.60V'
+			item.5 '9.65V'
+			item.6 '10.83V'
+			item.7 '12.15V'
+			item.8 '13.63V'
+			item.9 '15.29V'
+		}
+	}
+	control.74 {
+		iface MIXER
+		name 'Left DHT Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.75 {
+		iface MIXER
+		name 'Left DHT Min Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 9'
+			dbmin 800
+			dbmax 1700
+			dbvalue.0 800
+		}
+	}
+	control.76 {
+		iface MIXER
+		name 'Left DHT Rot Pnt Volume'
+		value 14
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -3000
+			dbmax -50
+			dbvalue.0 -100
+		}
+	}
+	control.77 {
+		iface MIXER
+		name 'Left DHT Attack Step Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 4'
+			dbmin 25
+			dbmax 300
+			dbvalue.0 25
+		}
+	}
+	control.78 {
+		iface MIXER
+		name 'Left DHT Release Step Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 4'
+			dbmin 25
+			dbmax 300
+			dbvalue.0 25
+		}
+	}
+	control.79 {
+		iface MIXER
+		name 'Left DHT Attack Rate'
+		value '70us'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '17.5us'
+			item.1 '35us'
+			item.2 '70us'
+			item.3 '140us'
+			item.4 '280us'
+			item.5 '560us'
+			item.6 '1120us'
+			item.7 '2240us'
+		}
+	}
+	control.80 {
+		iface MIXER
+		name 'Left DHT Release Rate'
+		value '1150ms'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '45ms'
+			item.1 '225ms'
+			item.2 '450ms'
+			item.3 '1150ms'
+			item.4 '2250ms'
+			item.5 '3100ms'
+			item.6 '4500ms'
+			item.7 '6750ms'
+		}
+	}
+	control.81 {
+		iface MIXER
+		name 'Left ADC PVDD CH Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.82 {
+		iface MIXER
+		name 'Left ADC PVDD FLT Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.83 {
+		iface MIXER
+		name 'Left ADC TEMP FLT Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.84 {
+		iface MIXER
+		name 'Left ADC PVDD'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.85 {
+		iface MIXER
+		name 'Left ADC TEMP'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.86 {
+		iface MIXER
+		name 'Left ADC PVDD FLT Coeff'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 3'
+		}
+	}
+	control.87 {
+		iface MIXER
+		name 'Left ADC TEMP FLT Coeff'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 3'
+		}
+	}
+	control.88 {
+		iface MIXER
+		name 'Left ADC SampleRate'
+		value '333kHz'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '333kHz'
+			item.1 '192kHz'
+			item.2 '64kHz'
+			item.3 '48kHz'
+		}
+	}
+	control.89 {
+		iface MIXER
+		name 'Left BDE Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.90 {
+		iface MIXER
+		name 'Left BDE LVL4 Mute Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.91 {
+		iface MIXER
+		name 'Left BDE LVL4 Hold Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.92 {
+		iface MIXER
+		name 'Left BDE LVL1 Thresh'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.93 {
+		iface MIXER
+		name 'Left BDE LVL2 Thresh'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.94 {
+		iface MIXER
+		name 'Left BDE LVL3 Thresh'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.95 {
+		iface MIXER
+		name 'Left BDE LVL4 Thresh'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.96 {
+		iface MIXER
+		name 'Left BDE Active Level'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 8'
+		}
+	}
+	control.97 {
+		iface MIXER
+		name 'Left BDE Clip Mode Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.98 {
+		iface MIXER
+		name 'Left BDE Thresh Hysteresis'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.99 {
+		iface MIXER
+		name 'Left BDE Hold Time'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 255'
+		}
+	}
+	control.100 {
+		iface MIXER
+		name 'Left BDE Attack Rate'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+		}
+	}
+	control.101 {
+		iface MIXER
+		name 'Left BDE Release Rate'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+		}
+	}
+	control.102 {
+		iface MIXER
+		name 'Left BDE LVL1 Clip Thresh Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.103 {
+		iface MIXER
+		name 'Left BDE LVL2 Clip Thresh Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.104 {
+		iface MIXER
+		name 'Left BDE LVL3 Clip Thresh Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.105 {
+		iface MIXER
+		name 'Left BDE LVL4 Clip Thresh Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.106 {
+		iface MIXER
+		name 'Left BDE LVL1 Clip Reduction Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.107 {
+		iface MIXER
+		name 'Left BDE LVL2 Clip Reduction Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.108 {
+		iface MIXER
+		name 'Left BDE LVL3 Clip Reduction Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.109 {
+		iface MIXER
+		name 'Left BDE LVL4 Clip Reduction Volume'
+		value 60
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 60'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.110 {
+		iface MIXER
+		name 'Left BDE LVL1 Limiter Thresh Volume'
+		value 15
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.111 {
+		iface MIXER
+		name 'Left BDE LVL2 Limiter Thresh Volume'
+		value 15
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.112 {
+		iface MIXER
+		name 'Left BDE LVL3 Limiter Thresh Volume'
+		value 15
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.113 {
+		iface MIXER
+		name 'Left BDE LVL4 Limiter Thresh Volume'
+		value 15
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.114 {
+		iface MIXER
+		name 'Left Limiter Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.115 {
+		iface MIXER
+		name 'Left Limiter Src Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.116 {
+		iface MIXER
+		name 'Left Limiter Thresh Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1500
+			dbmax 0
+			dbvalue.0 -1500
+		}
+	}
+	control.117 {
+		iface MIXER
+		name 'Left Limiter Attack Rate'
+		value '10us'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '10us'
+			item.1 '20us'
+			item.2 '40us'
+			item.3 '80us'
+			item.4 '160us'
+			item.5 '320us'
+			item.6 '640us'
+			item.7 '1.28ms'
+			item.8 '2.56ms'
+			item.9 '5.12ms'
+			item.10 '10.24ms'
+			item.11 '20.48ms'
+			item.12 '40.96ms'
+			item.13 '81.92ms'
+			item.14 '16.384ms'
+			item.15 '32.768ms'
+		}
+	}
+	control.118 {
+		iface MIXER
+		name 'Left Limiter Release Rate'
+		value '40us'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '40us'
+			item.1 '80us'
+			item.2 '160us'
+			item.3 '320us'
+			item.4 '640us'
+			item.5 '1.28ms'
+			item.6 '2.56ms'
+			item.7 '5.120ms'
+			item.8 '10.24ms'
+			item.9 '20.48ms'
+			item.10 '40.96ms'
+			item.11 '81.92ms'
+			item.12 '163.84ms'
+			item.13 '327.68ms'
+			item.14 '655.36ms'
+			item.15 '1310.72ms'
+		}
+	}
+	control.119 {
+		iface MIXER
+		name 'Left Spk Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.120 {
+		iface MIXER
+		name 'Right Spk Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.121 {
+		iface MIXER
+		name 'DSP Volume'
+		value 1073741823
+		comment {
+			access 'read write volatile'
+			type INTEGER
+			count 1
+			range '0 - 1073741823'
+		}
+	}
+	control.122 {
+		iface MIXER
+		name 'Right DAI Sel Mux'
+		value LeftRight
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Left
+			item.1 Right
+			item.2 LeftRight
+		}
+	}
+	control.123 {
+		iface MIXER
+		name 'Right VI Sense Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.124 {
+		iface MIXER
+		name 'Right SpkFB Sense Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.125 {
+		iface MIXER
+		name 'Left DAI Sel Mux'
+		value LeftRight
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Left
+			item.1 Right
+			item.2 LeftRight
+		}
+	}
+	control.126 {
+		iface MIXER
+		name 'Left VI Sense Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.127 {
+		iface MIXER
+		name 'Left SpkFB Sense Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+}
+state.HDMI {
+	control.1 {
+		iface CARD
+		name 'HDMI/DP Jack'
+		value false
+		comment {
+			access read
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.2 {
+		iface MIXER
+		name 'IEC958 Playback Con Mask'
+		value '0fff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+		comment {
+			access read
+			type IEC958
+			count 1
+		}
+	}
+	control.3 {
+		iface MIXER
+		name 'IEC958 Playback Pro Mask'
+		value '0f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+		comment {
+			access read
+			type IEC958
+			count 1
+		}
+	}
+	control.4 {
+		iface MIXER
+		name 'IEC958 Playback Default'
+		value '0400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+		comment {
+			access 'read write'
+			type IEC958
+			count 1
+		}
+	}
+	control.5 {
+		iface MIXER
+		name 'IEC958 Playback Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.6 {
+		iface PCM
+		name ELD
+		value ''
+		comment {
+			access 'read volatile'
+			type BYTES
+			count 0
+		}
+	}
+	control.7 {
+		iface CARD
+		name 'HDMI/DP,pcm=1 Jack'
+		value false
+		comment {
+			access read
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.8 {
+		iface MIXER
+		name 'IEC958 Playback Con Mask'
+		index 1
+		value '0fff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+		comment {
+			access read
+			type IEC958
+			count 1
+		}
+	}
+	control.9 {
+		iface MIXER
+		name 'IEC958 Playback Pro Mask'
+		index 1
+		value '0f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+		comment {
+			access read
+			type IEC958
+			count 1
+		}
+	}
+	control.10 {
+		iface MIXER
+		name 'IEC958 Playback Default'
+		index 1
+		value '0400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+		comment {
+			access 'read write'
+			type IEC958
+			count 1
+		}
+	}
+	control.11 {
+		iface MIXER
+		name 'IEC958 Playback Switch'
+		index 1
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.12 {
+		iface PCM
+		device 1
+		name ELD
+		value ''
+		comment {
+			access 'read volatile'
+			type BYTES
+			count 0
+		}
+	}
+	control.13 {
+		iface CARD
+		name 'HDMI/DP,pcm=2 Jack'
+		value false
+		comment {
+			access read
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.14 {
+		iface MIXER
+		name 'IEC958 Playback Con Mask'
+		index 2
+		value '0fff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+		comment {
+			access read
+			type IEC958
+			count 1
+		}
+	}
+	control.15 {
+		iface MIXER
+		name 'IEC958 Playback Pro Mask'
+		index 2
+		value '0f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+		comment {
+			access read
+			type IEC958
+			count 1
+		}
+	}
+	control.16 {
+		iface MIXER
+		name 'IEC958 Playback Default'
+		index 2
+		value '0400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+		comment {
+			access 'read write'
+			type IEC958
+			count 1
+		}
+	}
+	control.17 {
+		iface MIXER
+		name 'IEC958 Playback Switch'
+		index 2
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.18 {
+		iface PCM
+		device 2
+		name ELD
+		value ''
+		comment {
+			access 'read volatile'
+			type BYTES
+			count 0
+		}
+	}
+	control.19 {
+		iface PCM
+		name 'Playback Channel Map'
+		value.0 0
+		value.1 0
+		value.2 0
+		value.3 0
+		value.4 0
+		value.5 0
+		value.6 0
+		value.7 0
+		comment {
+			access 'read write volatile'
+			type INTEGER
+			count 8
+			range '0 - 36'
+		}
+	}
+	control.20 {
+		iface PCM
+		device 1
+		name 'Playback Channel Map'
+		value.0 0
+		value.1 0
+		value.2 0
+		value.3 0
+		value.4 0
+		value.5 0
+		value.6 0
+		value.7 0
+		comment {
+			access 'read write volatile'
+			type INTEGER
+			count 8
+			range '0 - 36'
+		}
+	}
+	control.21 {
+		iface PCM
+		device 2
+		name 'Playback Channel Map'
+		value.0 0
+		value.1 0
+		value.2 0
+		value.3 0
+		value.4 0
+		value.5 0
+		value.6 0
+		value.7 0
+		comment {
+			access 'read write volatile'
+			type INTEGER
+			count 8
+			range '0 - 36'
+		}
+	}
+}
+state.DA7219 {
+	control.1 {
+		iface MIXER
+		name 'Mic Volume'
+		value 7
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 7'
+			dbmin -600
+			dbmax 3600
+			dbvalue.0 3600
+		}
+	}
+	control.2 {
+		iface MIXER
+		name 'Mic Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.3 {
+		iface MIXER
+		name 'Mixin Volume'
+		value 3
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -450
+			dbmax 1800
+			dbvalue.0 0
+		}
+	}
+	control.4 {
+		iface MIXER
+		name 'Mixin Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.5 {
+		iface MIXER
+		name 'Mixin Gain Ramp Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.6 {
+		iface MIXER
+		name 'Mixin ZC Gain Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.7 {
+		iface MIXER
+		name 'Capture Digital Volume'
+		value 111
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 127'
+			dbmin -8325
+			dbmax 1200
+			dbvalue.0 0
+		}
+	}
+	control.8 {
+		iface MIXER
+		name 'Capture Digital Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.9 {
+		iface MIXER
+		name 'Capture Digital Gain Ramp Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.10 {
+		iface MIXER
+		name 'ALC Attack Rate'
+		value '7.33/fs'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '7.33/fs'
+			item.1 '14.66/fs'
+			item.2 '29.32/fs'
+			item.3 '58.64/fs'
+			item.4 '117.3/fs'
+			item.5 '234.6/fs'
+			item.6 '469.1/fs'
+			item.7 '938.2/fs'
+			item.8 '1876/fs'
+			item.9 '3753/fs'
+			item.10 '7506/fs'
+			item.11 '15012/fs'
+			item.12 '30024/fs'
+		}
+	}
+	control.11 {
+		iface MIXER
+		name 'ALC Release Rate'
+		value '28.66/fs'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '28.66/fs'
+			item.1 '57.33/fs'
+			item.2 '114.6/fs'
+			item.3 '229.3/fs'
+			item.4 '458.6/fs'
+			item.5 '917.1/fs'
+			item.6 '1834/fs'
+			item.7 '3668/fs'
+			item.8 '7337/fs'
+			item.9 '14674/fs'
+			item.10 '29348/fs'
+		}
+	}
+	control.12 {
+		iface MIXER
+		name 'ALC Hold Time'
+		value '62/fs'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '62/fs'
+			item.1 '124/fs'
+			item.2 '248/fs'
+			item.3 '496/fs'
+			item.4 '992/fs'
+			item.5 '1984/fs'
+			item.6 '3968/fs'
+			item.7 '7936/fs'
+			item.8 '15872/fs'
+			item.9 '31744/fs'
+			item.10 '63488/fs'
+			item.11 '126976/fs'
+			item.12 '253952/fs'
+			item.13 '507904/fs'
+			item.14 '1015808/fs'
+			item.15 '2031616/fs'
+		}
+	}
+	control.13 {
+		iface MIXER
+		name 'ALC Envelope Attack Rate'
+		value '1/4'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '1/4'
+			item.1 '1/16'
+			item.2 '1/256'
+			item.3 '1/65536'
+		}
+	}
+	control.14 {
+		iface MIXER
+		name 'ALC Envelope Release Rate'
+		value '1/4'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '1/4'
+			item.1 '1/16'
+			item.2 '1/256'
+			item.3 '1/65536'
+		}
+	}
+	control.15 {
+		iface MIXER
+		name 'ALC Noise Threshold'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 63'
+			dbmin -9450
+			dbmax 0
+			dbvalue.0 -9450
+		}
+	}
+	control.16 {
+		iface MIXER
+		name 'ALC Min Threshold'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 63'
+			dbmin -9450
+			dbmax 0
+			dbvalue.0 -9450
+		}
+	}
+	control.17 {
+		iface MIXER
+		name 'ALC Max Threshold'
+		value 63
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 63'
+			dbmin -9450
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.18 {
+		iface MIXER
+		name 'ALC Max Attenuation'
+		value 15
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin 0
+			dbmax 9000
+			dbvalue.0 9000
+		}
+	}
+	control.19 {
+		iface MIXER
+		name 'ALC Max Volume'
+		value 15
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin 0
+			dbmax 9000
+			dbvalue.0 9000
+		}
+	}
+	control.20 {
+		iface MIXER
+		name 'ALC Min Analog Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 6'
+			dbmin 0
+			dbmax 3600
+			dbvalue.0 0
+		}
+	}
+	control.21 {
+		iface MIXER
+		name 'ALC Max Analog Volume'
+		value 6
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 6'
+			dbmin 0
+			dbmax 3600
+			dbvalue.0 3600
+		}
+	}
+	control.22 {
+		iface MIXER
+		name 'ALC Anticlip Step'
+		value '0.034dB/fs'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '0.034dB/fs'
+			item.1 '0.068dB/fs'
+			item.2 '0.136dB/fs'
+			item.3 '0.272dB/fs'
+		}
+	}
+	control.23 {
+		iface MIXER
+		name 'ALC Anticlip Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.24 {
+		iface MIXER
+		name 'ALC Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.25 {
+		iface MIXER
+		name 'ADC HPF Mode'
+		value Audio
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Disabled
+			item.1 Audio
+			item.2 Voice
+		}
+	}
+	control.26 {
+		iface MIXER
+		name 'ADC HPF Corner Audio'
+		value '2Hz'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '2Hz'
+			item.1 '4Hz'
+			item.2 '8Hz'
+			item.3 '16Hz'
+		}
+	}
+	control.27 {
+		iface MIXER
+		name 'ADC HPF Corner Voice'
+		value '2.5Hz'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '2.5Hz'
+			item.1 '25Hz'
+			item.2 '50Hz'
+			item.3 '100Hz'
+			item.4 '150Hz'
+			item.5 '200Hz'
+			item.6 '300Hz'
+			item.7 '400Hz'
+		}
+	}
+	control.28 {
+		iface MIXER
+		name 'Sidetone Volume'
+		value 14
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 14'
+			dbmin -4200
+			dbmax 0
+			dbvalue.0 0
+		}
+	}
+	control.29 {
+		iface MIXER
+		name 'Sidetone Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.30 {
+		iface MIXER
+		name 'ToneGen Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -4500
+			dbmax 0
+			dbvalue.0 -4500
+		}
+	}
+	control.31 {
+		iface MIXER
+		name 'ToneGen DTMF Key'
+		value '0'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '0'
+			item.1 '1'
+			item.2 '2'
+			item.3 '3'
+			item.4 '4'
+			item.5 '5'
+			item.6 '6'
+			item.7 '7'
+			item.8 '8'
+			item.9 '9'
+			item.10 A
+			item.11 B
+			item.12 C
+			item.13 D
+			item.14 '*'
+			item.15 '#'
+		}
+	}
+	control.32 {
+		iface MIXER
+		name 'ToneGen DTMF Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.33 {
+		iface MIXER
+		name 'ToneGen Sinewave Gen Type'
+		value Sum
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Sum
+			item.1 SWG1
+			item.2 SWG2
+			item.3 SWG1_1-Cos
+		}
+	}
+	control.34 {
+		iface MIXER
+		name 'ToneGen Sinewave1 Freq'
+		value 5461
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 65535'
+		}
+	}
+	control.35 {
+		iface MIXER
+		name 'ToneGen Sinewave2 Freq'
+		value 16384
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 65535'
+		}
+	}
+	control.36 {
+		iface MIXER
+		name 'ToneGen On Time'
+		value 2
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 63'
+		}
+	}
+	control.37 {
+		iface MIXER
+		name 'ToneGen Off Time'
+		value 1
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 63'
+		}
+	}
+	control.38 {
+		iface MIXER
+		name 'Gain Ramp Rate'
+		value 'Nominal Rate * 8'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'Nominal Rate * 8'
+			item.1 'Nominal Rate'
+			item.2 'Nominal Rate / 8'
+			item.3 'Nominal Rate / 16'
+		}
+	}
+	control.39 {
+		iface MIXER
+		name 'DAC HPF Mode'
+		value Audio
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Disabled
+			item.1 Audio
+			item.2 Voice
+		}
+	}
+	control.40 {
+		iface MIXER
+		name 'DAC HPF Corner Audio'
+		value '2Hz'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '2Hz'
+			item.1 '4Hz'
+			item.2 '8Hz'
+			item.3 '16Hz'
+		}
+	}
+	control.41 {
+		iface MIXER
+		name 'DAC HPF Corner Voice'
+		value '2.5Hz'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '2.5Hz'
+			item.1 '25Hz'
+			item.2 '50Hz'
+			item.3 '100Hz'
+			item.4 '150Hz'
+			item.5 '200Hz'
+			item.6 '300Hz'
+			item.7 '400Hz'
+		}
+	}
+	control.42 {
+		iface MIXER
+		name 'DAC EQ Band1 Volume'
+		value 8
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1050
+			dbmax 1200
+			dbvalue.0 150
+		}
+	}
+	control.43 {
+		iface MIXER
+		name 'DAC EQ Band2 Volume'
+		value 8
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1050
+			dbmax 1200
+			dbvalue.0 150
+		}
+	}
+	control.44 {
+		iface MIXER
+		name 'DAC EQ Band3 Volume'
+		value 8
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1050
+			dbmax 1200
+			dbvalue.0 150
+		}
+	}
+	control.45 {
+		iface MIXER
+		name 'DAC EQ Band4 Volume'
+		value 8
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1050
+			dbmax 1200
+			dbvalue.0 150
+		}
+	}
+	control.46 {
+		iface MIXER
+		name 'DAC EQ Band5 Volume'
+		value 8
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -1050
+			dbmax 1200
+			dbvalue.0 150
+		}
+	}
+	control.47 {
+		iface MIXER
+		name 'DAC EQ Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.48 {
+		iface MIXER
+		name 'DAC Soft Mute Rate'
+		value '1 Sample'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '1 Sample'
+			item.1 '2 Samples'
+			item.2 '4 Samples'
+			item.3 '8 Samples'
+			item.4 '16 Samples'
+			item.5 '32 Samples'
+			item.6 '64 Samples'
+		}
+	}
+	control.49 {
+		iface MIXER
+		name 'DAC Soft Mute Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.50 {
+		iface MIXER
+		name 'DAC NG Setup Time'
+		value '256 Samples'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '256 Samples'
+			item.1 '512 Samples'
+			item.2 '1024 Samples'
+			item.3 '2048 Samples'
+		}
+	}
+	control.51 {
+		iface MIXER
+		name 'DAC NG Rampup Rate'
+		value '0.22ms/dB'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '0.22ms/dB'
+			item.1 '0.0138ms/dB'
+		}
+	}
+	control.52 {
+		iface MIXER
+		name 'DAC NG Rampdown Rate'
+		value '0.88ms/dB'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '0.88ms/dB'
+			item.1 '14.08ms/dB'
+		}
+	}
+	control.53 {
+		iface MIXER
+		name 'DAC NG Off Threshold'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 7'
+			dbmin -10200
+			dbmax -6000
+			dbvalue.0 -10200
+		}
+	}
+	control.54 {
+		iface MIXER
+		name 'DAC NG On Threshold'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 7'
+			dbmin -10200
+			dbmax -6000
+			dbvalue.0 -10200
+		}
+	}
+	control.55 {
+		iface MIXER
+		name 'DAC NG Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.56 {
+		iface MIXER
+		name 'Playback Digital Volume'
+		value.0 111
+		value.1 111
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 127'
+			dbmin -9999999
+			dbmax 1200
+			dbvalue.0 0
+			dbvalue.1 0
+		}
+	}
+	control.57 {
+		iface MIXER
+		name 'Playback Digital Switch'
+		value.0 false
+		value.1 false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 2
+		}
+	}
+	control.58 {
+		iface MIXER
+		name 'Playback Digital Gain Ramp Switch'
+		value.0 true
+		value.1 true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 2
+		}
+	}
+	control.59 {
+		iface MIXER
+		name 'Charge Pump Track Mode'
+		value 'DAC Volume'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'Largest Volume'
+			item.1 'DAC Volume'
+			item.2 'Signal Magnitude'
+		}
+	}
+	control.60 {
+		iface MIXER
+		name 'Charge Pump Threshold'
+		value 14
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 63'
+		}
+	}
+	control.61 {
+		iface MIXER
+		name 'Headphone Volume'
+		value.0 57
+		value.1 57
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 63'
+			dbmin -5700
+			dbmax 600
+			dbvalue.0 0
+			dbvalue.1 0
+		}
+	}
+	control.62 {
+		iface MIXER
+		name 'Headphone Switch'
+		value.0 false
+		value.1 false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 2
+		}
+	}
+	control.63 {
+		iface MIXER
+		name 'Headphone Gain Ramp Switch'
+		value.0 true
+		value.1 true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 2
+		}
+	}
+	control.64 {
+		iface MIXER
+		name 'Headphone ZC Gain Switch'
+		value.0 false
+		value.1 false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 2
+		}
+	}
+	control.65 {
+		iface CARD
+		name 'Headphone Jack'
+		value false
+		comment {
+			access read
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.66 {
+		iface CARD
+		name 'Headset Mic Jack'
+		value false
+		comment {
+			access read
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.67 {
+		iface CARD
+		name 'Line Out Jack'
+		value false
+		comment {
+			access read
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.68 {
+		iface MIXER
+		name 'Headphone Jack Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.69 {
+		iface MIXER
+		name 'Headset Mic Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.70 {
+		iface MIXER
+		name 'Line Out Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.71 {
+		iface MIXER
+		name 'Mixer In Mic Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.72 {
+		iface MIXER
+		name 'Out DAIL Mux'
+		value ADC
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 ADC
+			item.1 'Tone Generator'
+			item.2 DAIL
+			item.3 DAIR
+		}
+	}
+	control.73 {
+		iface MIXER
+		name 'Out DAIR Mux'
+		value 'Tone Generator'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 ADC
+			item.1 'Tone Generator'
+			item.2 DAIL
+			item.3 DAIR
+		}
+	}
+	control.74 {
+		iface MIXER
+		name 'Out DACL Mux'
+		value DAIL
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 ADC
+			item.1 'Tone Generator'
+			item.2 DAIL
+			item.3 DAIR
+		}
+	}
+	control.75 {
+		iface MIXER
+		name 'Out DACR Mux'
+		value DAIR
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 ADC
+			item.1 'Tone Generator'
+			item.2 DAIL
+			item.3 DAIR
+		}
+	}
+	control.76 {
+		iface MIXER
+		name 'Mixer Out FilterL DACL Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.77 {
+		iface MIXER
+		name 'Mixer Out FilterR DACR Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.78 {
+		iface MIXER
+		name 'ST Mixer Out FilterL Out FilterL Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.79 {
+		iface MIXER
+		name 'ST Mixer Out FilterL Out FilterR Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.80 {
+		iface MIXER
+		name 'ST Mixer Out FilterL Sidetone Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.81 {
+		iface MIXER
+		name 'ST Mixer Out FilterR Out FilterL Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.82 {
+		iface MIXER
+		name 'ST Mixer Out FilterR Out FilterR Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.83 {
+		iface MIXER
+		name 'ST Mixer Out FilterR Sidetone Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+}
+state.PROBE {
+	control {
+	}
+}
+state.DMIC {
+	control.1 {
+		iface MIXER
+		name 'DMIC Volume'
+		value 0
+		comment {
+			access 'read write volatile'
+			type INTEGER
+			count 1
+			range '0 - 2147483647'
+		}
+	}
+}
